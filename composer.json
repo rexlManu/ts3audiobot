@@ -27,7 +27,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "rexlManu\\Ts3AudioBot\\Ts3AudioBotServiceProvider"
+        "rexlManu\\Ts3AudioBot\\Providers\\Ts3AudioBotServiceProvider"
       ]
     }
   }
