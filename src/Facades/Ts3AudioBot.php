@@ -5,7 +5,14 @@ namespace rexlManu\Ts3AudioBot\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
+use rexlManu\Ts3AudioBot\Instance\Ts3AudioBotInstance;
 
+/**
+ * Class Ts3AudioBot
+ * @package rexlManu\Ts3AudioBot\Facades
+ *
+ * @method Ts3AudioBotInstance instance(string $address, int $port, string $token, bool $objectAsArrays = true)
+ */
 class Ts3AudioBot extends Facade
 {
     /**
