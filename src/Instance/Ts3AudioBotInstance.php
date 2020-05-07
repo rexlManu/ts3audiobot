@@ -6,14 +6,22 @@ namespace rexlManu\Ts3AudioBot\Instance;
 
 use GuzzleHttp\Client;
 use rexlManu\Ts3AudioBot\Instance\Bot\Ts3AudioBotHandler;
+use rexlManu\Ts3AudioBot\Traits\Bot\Alias;
+use rexlManu\Ts3AudioBot\Traits\Bot\Api;
+use rexlManu\Ts3AudioBot\Traits\Bot\Command;
+use rexlManu\Ts3AudioBot\Traits\Bot\Help;
+use rexlManu\Ts3AudioBot\Traits\Bot\History;
+use rexlManu\Ts3AudioBot\Traits\Bot\Json;
+use rexlManu\Ts3AudioBot\Traits\Bot\ListApi;
 use rexlManu\Ts3AudioBot\Traits\Bot\Plugin;
+use rexlManu\Ts3AudioBot\Traits\Bot\Settings;
 use rexlManu\Ts3AudioBot\Traits\Bot\System;
 use function GuzzleHttp\Psr7\str;
 
 class Ts3AudioBotInstance
 {
 
-    use System, Plugin;
+    use System, Plugin, Settings, Json, ListApi, History, Command, Alias, Api, Help;
 
     private $endpoint;
     private $token;
