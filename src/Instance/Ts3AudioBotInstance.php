@@ -62,7 +62,7 @@ class Ts3AudioBotInstance
         }
 
         if ($botId != null) {
-            $url = sprintf('/bot/use/%s/(%s)', [$botId, $url]);
+            $url = sprintf('/bot/use/%s/(%s)', $botId, $url);
         }
 
         return json_decode($this->httpClient->get($this->endpoint . $url, [
