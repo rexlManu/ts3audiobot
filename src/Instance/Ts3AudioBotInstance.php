@@ -8,12 +8,19 @@ use GuzzleHttp\Client;
 use rexlManu\Ts3AudioBot\Instance\Bot\Ts3AudioBotHandler;
 use rexlManu\Ts3AudioBot\Traits\Bot\Alias;
 use rexlManu\Ts3AudioBot\Traits\Bot\Api;
+use rexlManu\Ts3AudioBot\Traits\Bot\Bot;
 use rexlManu\Ts3AudioBot\Traits\Bot\Command;
+use rexlManu\Ts3AudioBot\Traits\Bot\DefaultApi;
+use rexlManu\Ts3AudioBot\Traits\Bot\Getmy;
+use rexlManu\Ts3AudioBot\Traits\Bot\Getuser;
 use rexlManu\Ts3AudioBot\Traits\Bot\Help;
 use rexlManu\Ts3AudioBot\Traits\Bot\History;
 use rexlManu\Ts3AudioBot\Traits\Bot\Json;
 use rexlManu\Ts3AudioBot\Traits\Bot\ListApi;
 use rexlManu\Ts3AudioBot\Traits\Bot\Plugin;
+use rexlManu\Ts3AudioBot\Traits\Bot\Random;
+use rexlManu\Ts3AudioBot\Traits\Bot\Rights;
+use rexlManu\Ts3AudioBot\Traits\Bot\Server;
 use rexlManu\Ts3AudioBot\Traits\Bot\Settings;
 use rexlManu\Ts3AudioBot\Traits\Bot\System;
 use function GuzzleHttp\Psr7\str;
@@ -21,7 +28,7 @@ use function GuzzleHttp\Psr7\str;
 class Ts3AudioBotInstance
 {
 
-    use System, Plugin, Settings, Json, ListApi, History, Command, Alias, Api, Help;
+    use System, Plugin, Settings, Json, ListApi, History, Command, Alias, Api, Help, Bot, Rights, Server, Random, Getuser, Getmy, DefaultApi;
 
     private $endpoint;
     private $token;
