@@ -11,7 +11,7 @@ use rexlManu\Ts3AudioBot\Instance\Ts3AudioBotInstance;
  * Class Ts3AudioBot
  * @package rexlManu\Ts3AudioBot\Facades
  *
- * @method Ts3AudioBotInstance instance(string $address, int $port, string $token, bool $objectAsArrays = true)
+ * @method static Ts3AudioBotInstance instance(string $address, int $port, string $token, bool $objectAsArrays = true)
  */
 class Ts3AudioBot extends Facade
 {
