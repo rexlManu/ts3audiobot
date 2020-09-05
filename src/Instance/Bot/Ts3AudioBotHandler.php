@@ -28,11 +28,12 @@ use rexlManu\Ts3AudioBot\Traits\Bot\Settings;
 use rexlManu\Ts3AudioBot\Traits\Bot\Subscribe;
 use rexlManu\Ts3AudioBot\Traits\Bot\Unsubscribe;
 use rexlManu\Ts3AudioBot\Traits\Bot\Whisper;
+use rexlManu\Ts3AudioBot\Traits\Bot\Server;
 
 class Ts3AudioBotHandler
 {
 
-    use DefaultApi, ListApi, Pm, Quiz, Random, Repeat, Rights, Settings, Subscribe, Unsubscribe, Search, Whisper, Alias, Api, Bot, Command, Data, Getmy, Getuser, Help, History, Json, Kickme;
+    use DefaultApi, ListApi, Pm, Quiz, Random, Repeat, Rights, Settings, Subscribe, Unsubscribe, Search, Whisper, Alias, Api, Bot, Command, Data, Getmy, Getuser, Help, History, Json, Kickme, Server;
 
     private $instance;
     private $botId;
