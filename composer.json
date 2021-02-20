@@ -1,5 +1,5 @@
 {
-  "name": "rexlmanu/ts3audiobot",
+  "name": "rene-roscher/ts3audiobot",
   "description": "Api client for the c# project ts3audiobot designed for use in laravel applications",
   "type": "library",
   "keywords": [
